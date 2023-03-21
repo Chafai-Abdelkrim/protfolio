@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -21,6 +24,6 @@ h3 {
   font-weight: bold;
 }
 
-.App {
+/* .App {
   height: 300vh;
-}
+} */
