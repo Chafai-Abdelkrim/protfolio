@@ -18,6 +18,8 @@ const useCanvasEffect = () => {
   }, [firstLoad]);
 };
 
+class Particle {}
+
 class Effect {
   context: CanvasRenderingContext2D;
   canvasWidth: number;
@@ -62,6 +64,55 @@ class Effect {
         this.mouse.x = e.x - pageOffset.left;
         this.mouse.y = e.y - pageOffset.top;
       });
+  }
+
+  createText(textArr: string[]) {
+    this.context.fillStyle = '#fde9ff';
+    this.context.strokeStyle = 'black';
+    this.context.lineWidth = 2;
+    this.context.textAlign = 'center';
+
+    textArr.forEach((word, index) => {
+      if (index === 2) {
+        this.context.font = 'clamp(2rem, 0.6667rem + 3.3333vw, 4rem) Lusitana';
+        this.context.fillText(
+          word,
+          this.textX,
+          this.textY + index * this.lineHeight * 0.85
+        );
+      }
+      this.context.font = 'bold clamp(6rem, 15vw, 15rem) Raleway';
+      this.context.fillText(
+        word,
+        this.textX,
+        this.textY + index * this.lineHeight
+      );
+    });
+  }
+
+  convertToParticles() {
+    this.particles.length = 0;
+    const pixels = this.context.getImageData(
+      0,
+      0,
+      this.canvasWidth,
+      this.canvasHeight
+    ).data;
+    this.context.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
+
+    for (let y = 0; y < this.canvasHeight; y += this.gap) {
+      for (let x = 0; x < this.canvasWidth; x += this.gap) {
+        const index = (y * this.canvasWidth + x) * 4;
+        const alpha = pixels[index + 3];
+        if (alpha > 0) {
+          const red = pixels[index];
+          const green = pixels[index + 1];
+          const blue = pixels[index + 2];
+          const color = `rgb(${red}, ${green}, ${blue})`;
+          this.particles.push(new Particle(this, x, y, color));
+        }
+      }
+    }
   }
 }
 
