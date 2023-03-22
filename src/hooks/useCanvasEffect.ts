@@ -170,6 +170,22 @@ class Effect {
       }
     }
   }
+
+  render() {
+    this.particles.forEach((particle: Particle) => {
+      particle.update();
+      particle.draw();
+    });
+  }
+
+  resize(width: number, height: number) {
+    this.canvasWidth = width;
+    this.canvasHeight = height;
+    this.maxLineHeight = this.canvasWidth * 0.15;
+    this.lineHeight = this.maxLineHeight < 96 ? 96 : this.maxLineHeight;
+    this.textX = this.canvasWidth / 2;
+    this.textY = this.canvasHeight / 2 - this.lineHeight / 2;
+  }
 }
 
 export default useCanvasEffect;
