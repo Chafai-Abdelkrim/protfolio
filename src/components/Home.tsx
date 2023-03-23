@@ -28,7 +28,7 @@ const Home = () => {
       </div>
       <motion.button
         style={{ y: spring }}
-        onClick={() => document.getElementById('projects')?.scrollIntoView()}
+        onClick={() => document.getElementById('about')?.scrollIntoView()}
         className="absolute bottom-0 animate-bounce justify-self-center rounded-full transition duration-300 hover:bg-white/30"
       >
         <MdOutlineKeyboardArrowDown size={'4em'} />
