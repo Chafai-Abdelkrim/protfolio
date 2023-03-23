@@ -10,6 +10,8 @@ const useCanvasEffect = () => {
     const ctx = canvas.getContext('2d', {
       willReadFrequently: true,
     }) as CanvasRenderingContext2D;
+    if (!ctx) return;
+
     //setting canvas width and height
     canvas.width = window.innerWidth > 1600 ? 1600 : window.innerWidth;
     canvas.height = window.innerHeight > 900 ? 900 : window.innerHeight;
@@ -141,7 +143,7 @@ class Effect {
     this.particles = [];
     this.gap = 2;
     this.mouse = {
-      radius: 1000,
+      radius: 5000,
       x: 0,
       y: 0,
     };
@@ -168,6 +170,7 @@ class Effect {
           this.textX,
           this.textY + index * this.lineHeight * 0.85
         );
+        return;
       }
       this.context.font = 'bold clamp(6rem, 15vw, 15rem) Raleway';
       this.context.fillText(
