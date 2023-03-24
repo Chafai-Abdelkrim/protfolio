@@ -39,14 +39,16 @@ const About = () => {
             href="https://github.com/Chafai-Abdelkrim"
             target="_blank"
             rel="noreferrer"
-            className="flex max-w-max items-center justify-center gap-2 rounded-2xl p-2 text-lg font-semibold hover:border-2 hover:border-cyan-300 hover:p-[6px] hover:shadow-md hover:shadow-cyan-300 md:text-xl"
+            className="duration-400 flex max-w-max items-center justify-center gap-2 rounded-2xl p-2 text-lg font-semibold transition-shadow hover:border-2 hover:border-cyan-300 hover:p-[6px] hover:shadow-md hover:shadow-cyan-300 md:text-xl"
           >
             <SiGithub size={'1.5em'} />
             Abdelkrim Chafai
           </a>
         </div>
       </motion.div>
-      <motion.div></motion.div>
+      <motion.div>
+        
+      </motion.div>
     </motion.div>
   );
 };
