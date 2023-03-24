@@ -1,7 +1,112 @@
 import { useRef } from 'react';
 import { useSmoothScroll } from '../hooks';
 import { motion } from 'framer-motion';
-import { SiGithub } from 'react-icons/si';
+import {
+  SiCsharp,
+  SiCss3,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiJest,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiWebpack,
+} from 'react-icons/si';
+
+const skills = [
+  {
+    name: 'HTML',
+    icon: (
+      <SiHtml5
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#E34F26]"
+      />
+    ),
+  },
+  {
+    name: 'CSS',
+    icon: (
+      <SiCss3
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#1572B6]"
+      />
+    ),
+  },
+  {
+    name: 'Javascript',
+    icon: (
+      <SiJavascript
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#F7DF1E]"
+      />
+    ),
+  },
+  {
+    name: 'React',
+    icon: (
+      <SiReact
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#61DAFB]"
+      />
+    ),
+  },
+  {
+    name: 'TypeScript',
+    icon: (
+      <SiTypescript
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#3178C6]"
+      />
+    ),
+  },
+  {
+    name: 'Tailwind',
+    icon: (
+      <SiTailwindcss
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#06B6D4]"
+      />
+    ),
+  },
+  {
+    name: 'Jest',
+    icon: (
+      <SiJest
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#C21325]"
+      />
+    ),
+  },
+  {
+    name: 'Git',
+    icon: (
+      <SiGit
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#F05032]"
+      />
+    ),
+  },
+  {
+    name: 'Webpack',
+    icon: (
+      <SiWebpack
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#8DD6F9]"
+      />
+    ),
+  },
+  {
+    name: 'C-Sharp',
+    icon: (
+      <SiCsharp
+        size={'3em'}
+        className="origin-bottom transition duration-300 group-hover:text-[#823085]"
+      />
+    ),
+  },
+];
 
 const About = () => {
   const container = useRef(null);
@@ -46,8 +151,18 @@ const About = () => {
           </a>
         </div>
       </motion.div>
-      <motion.div>
-        
+      <motion.div
+        style={{ y: spring }}
+        className="grid w-full max-w-sm grid-cols-[max-content,1fr] justify-items-end gap-4 p-2 text-sm sm:text-base 2xl:max-w-xl 2xl:gap-8 2xl:text-xl"
+      >
+        {skills.map((item) => (
+          <div key={item.name} className="group flex items-center gap-2">
+            <p className="text-base font-semibold sm:text-lg 2xl:text-2xl">
+              {item.name}
+            </p>
+            {item.icon}
+          </div>
+        ))}
       </motion.div>
     </motion.div>
   );
