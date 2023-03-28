@@ -1,6 +1,10 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRef } from 'react';
 import {
+  MdOutlineArrowBackIos,
+  MdOutlineArrowForwardIos,
+} from 'react-icons/md';
+import {
   useSmoothScroll,
   useSmoothScrollRotate,
   useProjectsArray,
@@ -97,6 +101,23 @@ const Projects = () => {
             </AnimatePresence>
           </div>
         </div>
+      </motion.div>
+      <motion.div
+        style={{ y: spring }}
+        className="flex w-full justify-around self-start md:col-span-2 md:pt-8"
+      >
+        <button
+          onClick={pagePrev}
+          className="rounded-full bg-white/30 p-2 transition duration-300 hover:bg-white/50"
+        >
+          <MdOutlineArrowBackIos size={'2em'} />
+        </button>
+        <button
+          onClick={pageNext}
+          className="rounded-full bg-white/30 p-2 transition duration-300 hover:bg-white/50"
+        >
+          <MdOutlineArrowForwardIos size={'2em'} />
+        </button>
       </motion.div>
     </motion.div>
   );
