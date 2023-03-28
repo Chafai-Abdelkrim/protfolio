@@ -63,7 +63,7 @@ const Projects = () => {
           style={{ x: springX, rotate: springRotate }}
           className="phone relative left-4 -ml-4 aspect-auto h-full w-[15%]"
         >
-          <div className="aspect-[300/740] w-full bg-white">
+          <div className="aspect-[360/720] w-full bg-white">
             <AnimatePresence>
               <motion.img
                 initial={{ opacity: 0 }}
