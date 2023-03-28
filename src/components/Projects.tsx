@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRef } from 'react';
-import { useSmoothScroll } from '../hooks';
+import { useSmoothScroll,  } from '../hooks';
 
 const Projects = () => {
   const container = useRef(null);
