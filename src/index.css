@@ -68,3 +68,16 @@ h3 {
   height: .5rem;
   border-radius: 100vmax;
 }
+
+.fold::after {
+  content: '';
+  position: absolute;
+  top: -320%;
+  right: -320%;
+  rotate: 45deg;
+  width: 10rem;
+  height: 10rem;
+  z-index: -1;
+  background-color: #fde9ff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
