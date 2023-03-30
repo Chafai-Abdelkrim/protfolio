@@ -69,14 +69,14 @@ h3 {
   border-radius: 100vmax;
 }
 
-.fold::after {
+.fold-r::after {
   content: '';
   position: absolute;
-  top: -320%;
-  right: -320%;
-  rotate: 45deg;
-  width: 10rem;
-  height: 10rem;
+  top: -50%;
+  right: -50%;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0 0 0 50%;
   z-index: -1;
   background-color: #fde9ff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
