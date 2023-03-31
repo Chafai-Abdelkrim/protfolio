@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div id="Home" ref={container} className="grid h-[100svh] grid-rows-[1fr]">
       <header className="fixed z-50 flex w-full justify-between p-2">
-        <div className="flex gap-4">
+        <div className="fold-l flex gap-2">
           <Eye />
           <Eye />
         </div>
@@ -23,7 +23,7 @@ const Home = () => {
           className="fold-r relative text-base text-[#58545B]"
           href="mailto:chafai.abdelkrim@gmail.com"
         >
-          <MdOutlineMailOutline size={'2.5em'} />
+          <MdOutlineMailOutline size={'2.7em'} />
         </a>
       </header>
       <div className="flex flex-1 flex-col items-center justify-center text-center leading-none">

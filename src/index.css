@@ -73,10 +73,23 @@ h3 {
   content: '';
   position: absolute;
   top: -50%;
-  right: -50%;
-  width: 7rem;
-  height: 7rem;
+  right: -45%;
+  width: 6rem;
+  height: 6rem;
   border-radius: 0 0 0 50%;
+  z-index: -1;
+  background-color: #fde9ff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.fold-l::after {
+  content: '';
+  position: absolute;
+  top: -23%;
+  left: -0.5%;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0 0 50% 0;
   z-index: -1;
   background-color: #fde9ff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

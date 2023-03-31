@@ -5,8 +5,8 @@ const StyledEye = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 56px;
-  width: 37.8px;
+  height: 47.6px;
+  width: 32.13px;
   border-radius: 50%;
   box-shadow: inset 0px 0px 6px #000;
   background: #fff;
@@ -15,8 +15,8 @@ const EyeBall = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 24px;
-  width: 24px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   background: rgb(112, 56, 0);
   background: linear-gradient(
@@ -30,8 +30,8 @@ const EyeBall1 = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 18px;
-  width: 18px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   background: #2f1100;
 `;
@@ -39,12 +39,12 @@ const EyeBall2 = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  height: 8px;
-  width: 8px;
+  height: 4.5px;
+  width: 4.5px;
   border-radius: 50%;
   background: #fff;
 `;
-const power = { x: 15, y: 26 };
+const power = { x: 7, y: 15 };
 
 const Eye = () => {
   return (
