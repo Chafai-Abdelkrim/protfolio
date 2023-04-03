@@ -13,13 +13,15 @@
 [<img alt="screenShot of site" width="900px" src="./src/assets/site-screenshot.png" />](https://chafai-abdelkrim.github.io/protfolio/)
 
 ## 📝 Description
+
 My Personal Protfolio Website.
 
 ## 🛠️ Built with
- * React <img height="16" width="16" src="https://cdn.simpleicons.org/react" />
- * TypeScript <img height="16" width="16" src="https://cdn.simpleicons.org/typescript" />
- * Vite <img height="16" width="16" src="https://cdn.simpleicons.org/vite" />
- * Tailwindcss <img height="16" width="16" src="https://cdn.simpleicons.org/tailwindcss" />
- * Framer-Motion <img height="16" width="16" src="https://cdn.simpleicons.org/framer" />
- * ESLint <img height="16" width="16" src="https://cdn.simpleicons.org/eslint" />
- * Prettier <img height="16" width="16" src="https://cdn.simpleicons.org/prettier" />
+
+- React <img height="16" width="16" src="https://cdn.simpleicons.org/react" />
+- TypeScript <img height="16" width="16" src="https://cdn.simpleicons.org/typescript" />
+- Vite <img height="16" width="16" src="https://cdn.simpleicons.org/vite" />
+- Tailwindcss <img height="16" width="16" src="https://cdn.simpleicons.org/tailwindcss" />
+- Framer-Motion <img height="16" width="16" src="https://cdn.simpleicons.org/framer" />
+- ESLint <img height="16" width="16" src="https://cdn.simpleicons.org/eslint" />
+- Prettier <img height="16" width="16" src="https://cdn.simpleicons.org/prettier" />

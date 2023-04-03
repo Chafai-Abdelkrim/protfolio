@@ -64,8 +64,8 @@ h3 {
 }
 
 .desktop-dots div {
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 100vmax;
 }
 
