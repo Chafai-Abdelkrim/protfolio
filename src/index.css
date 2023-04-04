@@ -94,3 +94,21 @@ h3 {
   background-color: #fde9ff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+@media (max-width: 500px) {
+  .fold-l {
+    display: none;
+  }
+  .fold-r svg {
+    width: 2em;
+    height: 2em;
+  }
+  .fold-r::after {
+    border-radius: 0;
+    width: 8rem;
+    height: 8rem;
+    left: -230%;
+    top: -230%;
+    rotate: 45deg;
+  }
+}
