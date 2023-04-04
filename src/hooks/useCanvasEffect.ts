@@ -168,11 +168,11 @@ class Effect {
         this.context.fillText(
           word,
           this.textX,
-          this.textY + index * this.lineHeight * 0.85
+          this.textY + index * this.lineHeight * 0.95
         );
         return;
       }
-      this.context.font = 'bold clamp(6rem, 15vw, 15rem) Raleway';
+      this.context.font = 'bold clamp(4.4rem, 15vw, 15rem) Raleway';
       this.context.fillText(
         word,
         this.textX,
