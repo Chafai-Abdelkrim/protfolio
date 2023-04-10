@@ -8,9 +8,9 @@ const useSmoothScroll = (container: MutableRefObject<HTMLElement | null>) => {
   });
   const transform = useTransform(scrollYProgress, [0, 0.5, 1], [100, 0, -100]);
   const spring = useSpring(transform, {
-    damping: 10,
+    damping: 15,
     mass: 0.2,
-    stiffness: 50,
+    stiffness: 30,
   });
 
   return spring;
