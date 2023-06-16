@@ -7,13 +7,19 @@ import {
   SiReact,
   SiTypescript,
   SiWebpack,
+  SiSass,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
 } from 'react-icons/si';
-
 import cvAppDesktop from '../assets/cv-app_desktop_.webp';
 import cvAppMobile from '../assets/cv-app_mobile_.webp';
 
 import shoppingCartDesktop from '../assets/shopping-cart_desktop_.webp';
 import shoppingCartMobile from '../assets/shopping-cart_mobile_.webp';
+
+import prodInventDesktop from '../assets/prod-invent_desktop_.webp';
+import prodInventMobile from '../assets/prod-invent_mobile_.webp';
 
 import todoListDesktop from '../assets/todo-list_desktop_.webp';
 import todoListMobile from '../assets/todo-list_mobile_.webp';
@@ -55,6 +61,23 @@ const projectsArray = [
       <SiReact key={'React'} title={'React'} />,
       <SiTypescript key={'TypeScript'} title={'TypeScript'} />,
       <SiCss3 key={'Css'} title={'Css'} />,
+    ],
+  },
+  {
+    title: 'Product Inventory',
+    desc: 'A full-stack MERN application. Users can register and log in to the site that offers product inventory management and performs CRUD operations, edit their profile, and send an email.',
+    demoLink: 'https://product-inventory-sigma.vercel.app/',
+    codeLink: 'https://github.com/Chafai-Abdelkrim/product-inventory',
+    desktopImg: prodInventDesktop,
+    mobileImg: prodInventMobile,
+    icons: [
+      <SiReact key={'React'} title={'React'} />,
+      <SiJavascript key={'Javascript'} title={'Javascript'} />,
+      <SiSass key={'Sass'} title={'Scss'} />,
+      <SiCss3 key={'Css'} title={'Css'} />,
+      <SiMongodb key={'Mogodb'} title={'Mongodb'} />,
+      <SiNodedotjs key={'Node'} title={'Node'} />,
+      <SiExpress key={'Express'} title={'Express'} />,
     ],
   },
   {
