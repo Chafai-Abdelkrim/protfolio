@@ -11,6 +11,9 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiExpress,
+  SiLaravel,
+  SiMysql,
+  SiTailwindcss,
 } from 'react-icons/si';
 import cvAppDesktop from '../assets/cv-app_desktop_.webp';
 import cvAppMobile from '../assets/cv-app_mobile_.webp';
@@ -23,6 +26,9 @@ import prodInventMobile from '../assets/prod-invent_mobile_.webp';
 
 import todoListDesktop from '../assets/todo-list_desktop_.webp';
 import todoListMobile from '../assets/todo-list_mobile_.webp';
+
+import larajobsDesktop from '../assets/larajobs_desktop_.webp';
+import larajobsMobile from '../assets/larajobs_mobile_.webp';
 
 import weatherAppDesktop from '../assets/weather-app_desktop_.webp';
 import weatherAppMobile from '../assets/weather-app_mobile_.webp';
@@ -92,6 +98,19 @@ const projectsArray = [
       <SiJavascript key={'Javascript'} title={'Javascript'} />,
       <SiCss3 key={'Css'} title={'Css'} />,
       <SiWebpack key={'Webpack'} title={'Webpack'} />,
+    ],
+  },
+  {
+    title: 'Job Listings',
+    desc: 'full-stack CRUD Laravel application for job Listings with registration, login, post ownership, and listings management page.',
+    demoLink: '',
+    codeLink: 'https://github.com/Chafai-Abdelkrim/larajobs',
+    desktopImg: larajobsDesktop,
+    mobileImg: larajobsMobile,
+    icons: [
+      <SiLaravel key={'Laravel'} title={'Laravel'} />,
+      <SiMysql key={'Mysql'} title={'Mysql'} />,
+      <SiTailwindcss key={'Tailwind'} title={'Tailwind'} />,
     ],
   },
   {

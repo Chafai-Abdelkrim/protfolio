@@ -41,14 +41,16 @@ const Projects = () => {
         </div>
         <p>{currentProject.desc}</p>
         <div className="flex justify-center gap-3 md:justify-start">
-          <a
-            href={currentProject.demoLink}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-xl bg-white/30 py-2 px-4 font-semibold transition duration-300 hover:bg-white/50"
-          >
-            Live Demo
-          </a>
+          {currentProject.demoLink && (
+            <a
+              href={currentProject.demoLink}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-xl bg-white/30 py-2 px-4 font-semibold transition duration-300 hover:bg-white/50"
+            >
+              Live Demo
+            </a>
+          )}
           <a
             href={currentProject.codeLink}
             target="_blank"
