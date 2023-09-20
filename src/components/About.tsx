@@ -2,26 +2,26 @@ import { useRef } from 'react';
 import { useSmoothScroll } from '../hooks';
 import { motion } from 'framer-motion';
 import {
-  SiCsharp,
   SiCss3,
   SiGit,
   SiGithub,
-  SiHtml5,
   SiJavascript,
   SiJest,
   SiReact,
   SiTailwindcss,
   SiTypescript,
-  SiWebpack,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiExpress,
 } from 'react-icons/si';
 
 const skills = [
   {
-    name: 'HTML',
+    name: 'Next',
     icon: (
-      <SiHtml5
+      <SiNextdotjs
         size={'3em'}
-        className="origin-bottom transition duration-300 group-hover:text-[#E34F26]"
+        className="origin-bottom transition duration-300 group-hover:text-[#000]"
       />
     ),
   },
@@ -89,20 +89,20 @@ const skills = [
     ),
   },
   {
-    name: 'Webpack',
+    name: 'Node',
     icon: (
-      <SiWebpack
+      <SiNodedotjs
         size={'3em'}
-        className="origin-bottom transition duration-300 group-hover:text-[#8DD6F9]"
+        className="origin-bottom transition duration-300 group-hover:text-[#68A063]"
       />
     ),
   },
   {
-    name: 'C-Sharp',
+    name: 'Express',
     icon: (
-      <SiCsharp
+      <SiExpress
         size={'3em'}
-        className="origin-bottom transition duration-300 group-hover:text-[#823085]"
+        className="origin-bottom transition duration-300 group-hover:text-[#303030]"
       />
     ),
   },
