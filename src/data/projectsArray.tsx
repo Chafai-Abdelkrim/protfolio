@@ -14,6 +14,9 @@ import {
   SiLaravel,
   SiMysql,
   SiTailwindcss,
+  SiNextdotjs,
+  SiSanity,
+  SiStripe,
 } from 'react-icons/si';
 import cvAppDesktop from '../assets/cv-app_desktop_.webp';
 import cvAppMobile from '../assets/cv-app_mobile_.webp';
@@ -23,6 +26,9 @@ import shoppingCartMobile from '../assets/shopping-cart_mobile_.webp';
 
 import prodInventDesktop from '../assets/prod-invent_desktop_.webp';
 import prodInventMobile from '../assets/prod-invent_mobile_.webp';
+
+import ecomAppDesktop from '../assets/ecommerce-app_desktop_.webp';
+import ecomAppMobile from '../assets/ecommerce-app_mobile_.webp';
 
 import todoListDesktop from '../assets/todo-list_desktop_.webp';
 import todoListMobile from '../assets/todo-list_mobile_.webp';
@@ -84,6 +90,22 @@ const projectsArray = [
       <SiMongodb key={'Mogodb'} title={'Mongodb'} />,
       <SiNodedotjs key={'Node'} title={'Node'} />,
       <SiExpress key={'Express'} title={'Express'} />,
+    ],
+  },
+  {
+    title: 'E-commerce Application',
+    desc: 'E-commerce App made with Next 13, Sanity, and Stripe from start to finish. This project has every major feature you would expect from a modern e-commerce app',
+    demoLink: 'https://e-commerce-app-taupe-psi.vercel.app/',
+    codeLink: 'https://github.com/Chafai-Abdelkrim/e-commerce-app',
+    desktopImg: ecomAppDesktop,
+    mobileImg: ecomAppMobile,
+    icons: [
+      <SiNextdotjs key={'Next'} title={'Next'} />,
+      <SiReact key={'React'} title={'React'} />,
+      <SiTypescript key={'TypeScript'} title={'TypeScript'} />,
+      <SiTailwindcss key={'Tailwind'} title={'Tailwind'} />,
+      <SiSanity key={'Sanity'} title={'Sanity'} />,
+      <SiStripe key={'Stripe'} title={'Stripe'} />,
     ],
   },
   {
