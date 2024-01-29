@@ -17,6 +17,7 @@ import {
   SiNextdotjs,
   SiSanity,
   SiStripe,
+  SiPrisma
 } from 'react-icons/si';
 import cvAppDesktop from '../assets/cv-app_desktop_.webp';
 import cvAppMobile from '../assets/cv-app_mobile_.webp';
@@ -26,6 +27,9 @@ import shoppingCartMobile from '../assets/shopping-cart_mobile_.webp';
 
 import prodInventDesktop from '../assets/prod-invent_desktop_.webp';
 import prodInventMobile from '../assets/prod-invent_mobile_.webp';
+
+import trelloCloneDesktop from '../assets/trello-clone_desktop_.webp';
+import trelloCloneMobile from '../assets/trello-clone_mobile_.webp';
 
 import ecomAppDesktop from '../assets/ecommerce-app_desktop_.webp';
 import ecomAppMobile from '../assets/ecommerce-app_mobile_.webp';
@@ -90,6 +94,22 @@ const projectsArray = [
       <SiMongodb key={'Mogodb'} title={'Mongodb'} />,
       <SiNodedotjs key={'Node'} title={'Node'} />,
       <SiExpress key={'Express'} title={'Express'} />,
+    ],
+  },
+  {
+    title: 'Trello clone Application',
+    desc: 'Trello-clone App is made with Next 14 with server actions, Prisma, and Stripe. This project has every major feature you would expect from the original Trello app. Organizations and boards implemented with the help of Clerk/Next.js.',
+    demoLink: 'https://trello-clone-ochre.vercel.app',
+    codeLink: 'https://github.com/Chafai-Abdelkrim/trello-clone',
+    desktopImg: trelloCloneDesktop,
+    mobileImg: trelloCloneMobile,
+    icons: [
+      <SiNextdotjs key={'Next'} title={'Next'} />,
+      <SiReact key={'React'} title={'React'} />,
+      <SiTypescript key={'Javascript'} title={'Javascript'} />,
+      <SiTailwindcss key={'Tailwind'} title={'Tailwind'} />,
+      <SiPrisma key={'Prisma'} title={'Prisma'} />,
+      <SiStripe key={'Stripe'} title={'Stripe'} />,
     ],
   },
   {

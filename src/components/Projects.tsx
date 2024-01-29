@@ -89,7 +89,7 @@ const Projects = () => {
             <div className="bg-orange-500"></div>
             <div className="bg-green-500"></div>
           </div>
-          <div className="aspect-[16/8.6] w-full">
+          <div className="aspect-[16/8.15] w-full">
             <AnimatePresence>
               <motion.img
                 initial={{ opacity: 0 }}
